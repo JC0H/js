@@ -38,3 +38,15 @@ div.onmousemove = (emv)=>{
     console.log(emv);
     pCoords.innerHTML = emv.pageX + " " + emv.pageY;
 }
+
+div.onmousedown = function (emd) {
+    div.style.position = "absolute";
+    document.onmousemove = function (emm) {
+        div.style.top = emm.pageY + 'px';
+        div.style.left = emm.pageX + 'px';
+    }
+}
+
+div.onmouseup = ()=>{
+    document.onmousemove = null;
+}
