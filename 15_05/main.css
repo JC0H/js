@@ -1,0 +1,18 @@
+div{
+    width: 200px;
+    height: 200px;
+}
+
+#a{
+    background: red;
+}
+#row{
+    height: 20px;
+    width: 400px;
+    background: silver;
+}
+#tumbler{
+    height: 100%;
+    width: 20px;
+    background: blue;
+}
